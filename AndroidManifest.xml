@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thenew"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+       
+ <activity
+            android:name="com.thenew.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.thenew.Startingpoint"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.thenew.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenew.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.thenew.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenew.TestPlay" android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.thenew.Email" android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.thenew.Camera" android:label="Camera Application" 
+            android:screenOrientation="portrait">  </activity>
+         <activity
+            android:name="com.thenew.Data" android:label="@string/app_name" >
+        </activity>
+        
+          <activity
+            android:name="com.thenew.GFX" android:label="@string/app_name" >
+        </activity>
+         
+         <activity
+            android:name="com.thenew.OpenedClass" android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.thenew.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+             >
+            <intent-filter>
+                <action android:name="com.thenew.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenew.Prefs"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="com.thenew.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.thenew.SetActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+    </application>
+
+</manifest>
